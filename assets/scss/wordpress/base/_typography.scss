@@ -1,0 +1,43 @@
+// text alignment
+.has-text-align-left {
+  text-align: left;
+}
+
+.has-text-align-center {
+  text-align: center;
+}
+
+.has-text-align-right {
+  text-align: right;
+}
+
+// highlighting
+.has {
+  &-base-color {
+    color: $color-white !important;
+  }
+
+  &-contrast-color {
+    color: $color-black !important;
+  }
+
+  &-primary-color {
+    color: $color-primary !important;
+  }
+
+  &-secondary-color {
+    color: $color-secondary !important;
+  }
+
+  &-tertiary-color {
+    color: $color-gray-050 !important;
+  }
+}
+
+// list styling
+.is-wp-page,
+.wp-container {
+  ul {
+    list-style: disc;
+  }
+}

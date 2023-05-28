@@ -1,0 +1,22 @@
+.wp-block-audio {
+  audio {
+    width: 100%;
+    min-width: 300px;
+  }
+}
+
+.wp-block-video {
+  video {
+    width: 100%;
+  }
+}
+
+.wp-block-file {
+  &__embed {
+    display: none;
+  }
+
+  // &__button {
+  //   margin-left: 0.75em;
+  // }
+}

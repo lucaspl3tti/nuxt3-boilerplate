@@ -1,0 +1,67 @@
+.wp-element-button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 150px;
+  padding: 12px;
+  border: 2px solid $color-orange-300;
+  border-radius: 0 25px;
+  background-color: $color-orange-300;
+  color: $color-white;
+  font-weight: $font-weight-medium;
+  text-align: center;
+  overflow: hidden;
+  outline: 0;
+  transition: border-radius $animation-speed, color $animation-speed;
+  z-index: 1;
+  // box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.4);
+
+  .bi {
+    margin-left: 4px;
+    transition: transform 0.25s ease-in;
+  }
+
+  &:hover {
+    border-radius: 25px 0;
+
+    .bi {
+      transform: translateX(0.5rem);
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 0;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: $color-orange-500;
+    transition: 0.5s ease-out;
+    display: block;
+    z-index: -1;
+  }
+
+  &:hover {
+    background-color: $color-orange-300;
+    border-color: $color-orange-500;
+    color: $color-white;
+    text-decoration: none;
+
+    &::before {
+      width: 105%;
+    }
+  }
+
+  &:active {
+    background-color: $color-orange-300;
+  }
+
+  &:focus {
+    color: $color-white;
+    background-color: $color-orange-300;
+    border-color: $color-orange-300;
+    box-shadow: none;
+  }
+}

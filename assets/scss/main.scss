@@ -1,0 +1,10 @@
+// Import variables and vendor scss
+@import '~/assets/scss/abstracts/variables.scss';
+@import "~/assets/scss/vendor/bootstrap/custom";
+@import "~/node_modules/bootstrap/scss/bootstrap";
+
+// import wordpress styling ---> needs to be here, so it can be overwritten in other scss files
+@import "wordpress/wordpress.scss";
+
+// Import base styling
+@import "base/fonts";

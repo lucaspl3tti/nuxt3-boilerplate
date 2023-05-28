@@ -1,0 +1,133 @@
+// seperator
+.wp-block-separator {
+  border-top: 2px solid;
+  color: $color-black;
+  margin: 1rem 0;
+  opacity: 0.5;
+
+  &.has-alpha-channel-opacity {
+    opacity: 1;
+  }
+}
+
+// flex layout
+.is-layout-flex {
+  display: flex;
+  flex-flow: row wrap;
+  gap: spacing(6);
+
+  p {
+    margin-bottom: 0;
+  }
+
+  & > * {
+    margin: 0;
+  }
+
+  &.is-vertical {
+    flex-flow: column;
+  }
+
+  &.are-vertically-aligned-center {
+    align-items: center;
+  }
+}
+
+.wp-block-columns {
+  flex-wrap: nowrap;
+
+  &:not(.is-not-stacked-on-mobile)>.wp-block-column {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    &[style*=flex-basis] {
+      flex-grow: 0;
+    }
+  }
+}
+
+.wp-block-column {
+  flex-grow: 1;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+// alignments
+.aligncenter {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.alignright {
+  margin-left: auto !important;
+}
+
+.alignleft {
+  margin-right: auto !important;
+}
+
+// border styling
+.has {
+  // default border styles
+  &-base-border-color {
+    border-color: $color-white !important;
+  }
+
+  &-contrast-border-color {
+    border-color: $color-black !important;
+  }
+
+  &-primary-border-color {
+    border-color: $color-primary !important;
+  }
+
+  &-secondary-border-color {
+    border-color: $color-secondary !important;
+  }
+
+  &-tertiary-border-color {
+    border-color: $color-gray-050 !important;
+  }
+
+  // extra border styles from wp
+  &-cyan-bluish-gray-border-color {
+    border-color: $color-cyan-bluish-gray !important;
+  }
+
+  &-pale-pink-border-color {
+    border-color: $color-pale-pink !important;
+  }
+
+  &-vivid-red-border-color {
+    border-color: $color-vivid-red !important;
+  }
+
+  &-luminous-vivid-orange-border-color {
+    border-color: $color-luminous-vivid-orange !important
+  }
+
+  &-luminous-vivid-amber-border-color {
+    border-color: $color-luminous-vivid-amber !important;
+  }
+
+  &-light-green-cyan-border-color {
+    border-color: $color-light-green-cyan !important;
+  }
+
+  &-vivid-green-cyan-border-color {
+    border-color: $color-vivid-green-cyan !important
+  }
+
+  &-pale-cyan-blue-border-color {
+    border-color: $color-pale-cyan-blue !important
+  }
+
+  &-vivid-cyan-blue-border-color {
+    border-color: $color-vivid-cyan-blue !important
+  }
+
+  &-vivid-purple-border-color {
+    border-color: $color-vivid-purple !important;
+  }
+}

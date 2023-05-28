@@ -1,0 +1,36 @@
+.wp-block-image {
+  &.alignleft,
+  &.aligncenter,
+  &.alignright {
+    display: flex;
+    flex-flow: column;
+    @include marginX(0, $isImportant: true);
+  }
+
+  &.alignleft {
+    align-items: flex-start;
+  }
+
+  &.aligncenter {
+    align-items: center;
+  }
+
+  &.alignright {
+    align-items: flex-end;
+  }
+
+  :where([style*=border-width]) {
+    border-style: solid;
+  }
+
+  img[class*="wp-image"] {
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+}
+
+img[class*=wp-image-] {
+  height: auto;
+  max-width: 100%;
+}

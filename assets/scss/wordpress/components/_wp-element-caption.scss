@@ -1,0 +1,11 @@
+.wp-element-caption {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: $font-size-smaller-mobile;
+}
+
+@include tablet-portrait-up {
+  .wp-element-caption {
+    font-size: $font-size-smaller;
+  }
+}
