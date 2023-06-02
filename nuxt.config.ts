@@ -39,20 +39,11 @@ export default defineNuxtConfig({
     plugins: [svgLoader()],
   },
 
-  // tailwindcss: {
-  //   cssPath: '~/assets/css/tailwind.css',
-  //   configPath: 'tailwind.config'
-  //   // exposeConfig: false,
-  //   // config: {},
-  //   // injectPosition: 0,
-  //   // viewer: true,
-  // },
-
   imports: {
     dirs: ['stores']
   },
+
   modules: [
-    '@nuxtjs/tailwindcss',
     ['@pinia/nuxt',
       {
         autoImports: ['defineStore', 'acceptHMRUpdate']
@@ -64,7 +55,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
   ],
 
-  css: ['bootstrap/dist/css/bootstrap.css', '~/assets/scss/main.scss'],
+  css: ['bootstrap/scss/bootstrap.scss', '~/assets/scss/main.scss'],
 
   extends: ['nuxt-seo-kit'],
 

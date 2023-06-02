@@ -2,7 +2,6 @@ import axios from 'axios'
 const BASE_URL = 'https://api.nuxtjs.dev/mountains'
 
 /**
- * 建立實體，預設值在此處理
  * Create axios instance with some init params
  */
 const mountainRequest = axios.create({
