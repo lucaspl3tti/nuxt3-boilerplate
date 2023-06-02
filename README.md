@@ -1,4 +1,4 @@
-# Nuxt 3 with Eslint, Tailwindcss and Bootstrap 5
+# Nuxt 3 with Bootstrap Vue, ESlint and Pinia State Management
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
