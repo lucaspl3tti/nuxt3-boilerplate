@@ -12,7 +12,9 @@
   text-align: center;
   overflow: hidden;
   outline: 0;
-  transition: border-radius $animation-speed, color $animation-speed;
+  transition:
+    border-radius $animation-speed,
+    color $animation-speed;
   z-index: 1;
   // box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.4);
 
@@ -30,7 +32,7 @@
   }
 
   &::before {
-    content: "";
+    content: '';
     width: 0;
     height: 100vh;
     position: absolute;

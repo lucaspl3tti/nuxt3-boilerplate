@@ -20,11 +20,10 @@ export default defineNuxtConfig({
       meta: [
         {
           name: 'description',
-          content:
-            'A simple to use nuxt3 starter boilerplate',
+          content: 'A simple to use nuxt3 starter boilerplate',
         },
-      ]
-    }
+      ],
+    },
   },
 
   vite: {
@@ -40,18 +39,19 @@ export default defineNuxtConfig({
   },
 
   imports: {
-    dirs: ['stores']
+    dirs: ['stores'],
   },
 
   modules: [
-    ['@pinia/nuxt',
+    '@bootstrap-vue-next/nuxt',
+    [
+      '@pinia/nuxt',
       {
-        autoImports: ['defineStore', 'acceptHMRUpdate']
-      }
+        autoImports: ['defineStore', 'acceptHMRUpdate'],
+      },
     ],
     '@vueuse/nuxt',
     '@nuxtjs/device',
-    'bootstrap-vue-next/nuxt',
     'nuxt-icon',
   ],
 
@@ -60,6 +60,6 @@ export default defineNuxtConfig({
   extends: ['nuxt-seo-kit'],
 
   alias: {
-    pinia: "/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs"
+    pinia: '/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs',
   },
 })

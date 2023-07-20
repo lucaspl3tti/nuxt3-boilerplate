@@ -6,7 +6,13 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "npm run lint:js && npm run lint:prettier",
+    "lint:fix": "prettier --write --list-different . && npm run lint:js -- --fix",
+    "lint:js": "npm run lint:js -- --fix",
+    "lint:js-fix": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint:prettier-fix": "prettier --write --list-different ."
   },
   "lint-staged": {
     "*.{ts,vue}": [
@@ -14,6 +20,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.22.7",
+    "@bootstrap-vue-next/nuxt": "^0.1.0",
     "@nuxtjs/device": "^3.1.0",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@popperjs/core": "^2.11.6",
@@ -22,18 +30,25 @@
     "@vueuse/core": "^10.1.2",
     "@vueuse/nuxt": "^10.1.2",
     "bootstrap": "^5.2.3",
-    "bootstrap-vue-next": "^0.7.3",
     "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.7.0",
-    "nuxt-icon": "^0.1.7",
-    "nuxt-seo-kit": "^0.4.8",
     "lint-staged": "^13.0.3",
     "nuxt": "^3.4.3",
+    "nuxt-icon": "^0.1.7",
+    "nuxt-seo-kit": "^0.4.8",
+    "prettier": "^3.0.0",
+    "stylelint": "^14.11.0",
     "typescript": "^4.9.3",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^28.0.0",
     "vue-i18n": "^9.2.2"
   },
   "dependencies": {
+    "@nuxtjs/stylelint-module": "^5.1.0",
     "@pinia/nuxt": "^0.4.10",
     "axios": "^1.4.0",
     "bootstrap-icons": "^1.9.1",

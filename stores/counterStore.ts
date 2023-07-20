@@ -1,21 +1,21 @@
 export const useCounterStore = defineStore('counter', {
   state: () => ({
-    count: 122555
+    count: 122555,
   }),
   actions: {
-    increment () {
+    increment() {
       this.count++
     },
-    decrement () {
+    decrement() {
       this.count--
     },
-    reset () {
+    reset() {
       this.count = 0
     },
-    increment2x () {
+    increment2x() {
       this.count *= 2
-    }
-  }
+    },
+  },
 })
 
 // console.log(import.meta.hot)

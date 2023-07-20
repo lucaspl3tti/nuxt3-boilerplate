@@ -19,18 +19,18 @@
     align-items: flex-end;
   }
 
-  :where([style*=border-width]) {
+  :where([style*='border-width']) {
     border-style: solid;
   }
 
-  img[class*="wp-image"] {
+  img[class*='wp-image'] {
     height: auto;
     max-width: 100%;
     vertical-align: bottom;
   }
 }
 
-img[class*=wp-image-] {
+img[class*='wp-image-'] {
   height: auto;
   max-width: 100%;
 }

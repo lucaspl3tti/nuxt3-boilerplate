@@ -8,7 +8,7 @@
 export default {
   data() {
     return {
-      helloWorld: "Hallo Welt!"
+      helloWorld: 'Hallo Welt!',
     }
   },
 }

@@ -36,11 +36,11 @@
 .wp-block-columns {
   flex-wrap: nowrap;
 
-  &:not(.is-not-stacked-on-mobile)>.wp-block-column {
+  &:not(.is-not-stacked-on-mobile) > .wp-block-column {
     flex-basis: 0;
     flex-grow: 1;
 
-    &[style*=flex-basis] {
+    &[style*='flex-basis'] {
       flex-grow: 0;
     }
   }
@@ -104,7 +104,7 @@
   }
 
   &-luminous-vivid-orange-border-color {
-    border-color: $color-luminous-vivid-orange !important
+    border-color: $color-luminous-vivid-orange !important;
   }
 
   &-luminous-vivid-amber-border-color {
@@ -116,15 +116,15 @@
   }
 
   &-vivid-green-cyan-border-color {
-    border-color: $color-vivid-green-cyan !important
+    border-color: $color-vivid-green-cyan !important;
   }
 
   &-pale-cyan-blue-border-color {
-    border-color: $color-pale-cyan-blue !important
+    border-color: $color-pale-cyan-blue !important;
   }
 
   &-vivid-cyan-blue-border-color {
-    border-color: $color-vivid-cyan-blue !important
+    border-color: $color-vivid-cyan-blue !important;
   }
 
   &-vivid-purple-border-color {

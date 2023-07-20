@@ -9,11 +9,7 @@ $space-base: 4px;
 }
 
 // paddings
-@mixin paddingY(
-  $paddingTop,
-  $paddingBottom: $paddingTop,
-  $isImportant: false
-) {
+@mixin paddingY($paddingTop, $paddingBottom: $paddingTop, $isImportant: false) {
   @if $isImportant {
     $paddingTop: $paddingTop !important;
     $paddingBottom: $paddingBottom !important;
@@ -38,11 +34,7 @@ $space-base: 4px;
 }
 
 // margins
-@mixin marginY(
-  $marginTop,
-  $marginBottom: $marginTop,
-  $isImportant: false
-) {
+@mixin marginY($marginTop, $marginBottom: $marginTop, $isImportant: false) {
   @if $isImportant {
     $marginTop: $marginTop !important;
     $marginBottom: $marginBottom !important;
@@ -52,11 +44,7 @@ $space-base: 4px;
   margin-bottom: $marginBottom;
 }
 
-@mixin marginX(
-  $marginLeft,
-  $marginRight: $marginLeft,
-  $isImportant: false
-) {
+@mixin marginX($marginLeft, $marginRight: $marginLeft, $isImportant: false) {
   @if $isImportant {
     $marginLeft: $marginLeft !important;
     $marginRight: $marginRight !important;

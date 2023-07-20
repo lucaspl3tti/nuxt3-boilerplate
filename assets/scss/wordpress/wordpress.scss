@@ -1,16 +1,16 @@
 // import custom variables for wordpress styles
-@import "abstracts/colors";
+@import 'abstracts/colors';
 
 // import base styling
-@import "base/typography";
-@import "base/layout";
+@import 'base/typography';
+@import 'base/layout';
 
 // import wordpress component styling
-@import "components/media";
-@import "components/wp-element-button";
-@import "components/wp-element-caption";
+@import 'components/media';
+@import 'components/wp-element-button';
+@import 'components/wp-element-caption';
 
-@import "components/blocks/wp-block-gallery";
-@import "components/blocks/wp-block-image";
-@import "components/blocks/wp-block-media-text";
-@import "components/blocks/wp-block-table";
+@import 'components/blocks/wp-block-gallery';
+@import 'components/blocks/wp-block-image';
+@import 'components/blocks/wp-block-media-text';
+@import 'components/blocks/wp-block-table';
