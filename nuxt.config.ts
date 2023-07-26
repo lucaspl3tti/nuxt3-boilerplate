@@ -30,7 +30,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "~/assets/scss/abstracts/variables.scss";',
+          additionalData: '@import "~/assets/scss/abstracts/variables.scss"; @import "~/node_modules/vuetify/lib/styles/main.sass";',
         },
       },
     },
@@ -38,24 +38,36 @@ export default defineNuxtConfig({
     plugins: [svgLoader()],
   },
 
-  imports: {
-    dirs: ['stores'],
+  build: {
+    transpile: ['vuetify'],
   },
 
   modules: [
-    '@bootstrap-vue-next/nuxt',
     [
       '@pinia/nuxt',
       {
         autoImports: ['defineStore', 'acceptHMRUpdate'],
       },
     ],
+    '@invictus.codes/nuxt-vuetify',
     '@vueuse/nuxt',
     '@nuxtjs/device',
     'nuxt-icon',
   ],
 
-  css: ['bootstrap/scss/bootstrap.scss', '~/assets/scss/main.scss'],
+  css: [
+    'vuetify/lib/styles/main.sass',
+    '@mdi/font/css/materialdesignicons.min.css',
+    '~/assets/scss/main.scss'
+  ],
+
+  vuetify: {
+    vuetifyOptions: {
+      theme: {
+        defaultTheme: 'light'
+      },
+    },
+  },
 
   extends: ['nuxt-seo-kit'],
 
