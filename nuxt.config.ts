@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     // Keys within public, will be also exposed to the client-side
     // public: {
-    //   apiBase: 'https://backend.garnele-online.de/wp-json',
+    //   apiBase: 'http://localhost:3030',
     // },
   },
 
@@ -69,7 +69,8 @@ export default defineNuxtConfig({
     },
   },
 
-  extends: ['nuxt-seo-kit'],
+  // @Doc SeoKit: Comment in <seo-kit /> tag for enabling nuxt seo extension
+  // extends: ['nuxt-seo-kit'],
 
   alias: {
     pinia: '/node_modules/@pinia/nuxt/node_modules/pinia/dist/pinia.mjs',

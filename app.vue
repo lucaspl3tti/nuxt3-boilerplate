@@ -1,9 +1,10 @@
 <template>
   <div>
-    <SeoKit />
+    <!-- @Doc SeoKit: Comment in <seo-kit /> tag for enabling nuxt seo extension -->
+    <!-- <seo-kit /> -->
 
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <nuxt-layout>
+      <nuxt-page />
+    </nuxt-layout>
   </div>
 </template>

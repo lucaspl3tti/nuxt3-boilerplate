@@ -1,5 +1,5 @@
 <template>
-  <BContainer class="main-container">
+  <v-container class="main-container">
     <slot />
-  </BContainer>
+  </v-container>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <main class="nuxt3-starter nuxt3-starter--home">
-    <HelloWorld :text="helloWorld" />
+    <hello-world :text="helloWorld" />
   </main>
 </template>
 
